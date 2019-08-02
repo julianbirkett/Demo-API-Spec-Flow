@@ -1,33 +1,28 @@
 swagger: '2.0'
 info:
   description: |
-    This is a sample Petstore server.  You can find 
-    out more about Swagger at 
-    [http://swagger.io](http://swagger.io) or on 
-    [irc.freenode.net, #swagger](http://swagger.io/irc/).
+    This is a sample Petstore server.
   version: 1.0.0
-  title: Swagger Petstore
-  termsOfService: http://swagger.io/terms/
+  title: Petstore
   contact:
-    email: apiteam@swagger.io
+    email: apiteam@example.com
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
-# host: petstore.swagger.io
 # basePath: /v2
 tags:
 - name: pet
   description: Everything about your Pets
   externalDocs:
     description: Find out more
-    url: http://swagger.io
+    url: http://example.com
 - name: store
   description: Access to Petstore orders
 - name: user
   description: Operations about user
   externalDocs:
     description: Find out more about our store
-    url: http://swagger.io
+    url: http://example.com
 # schemes:
 # - http
 paths:
@@ -542,7 +537,7 @@ paths:
 securityDefinitions:
   petstore_auth:
     type: oauth2
-    authorizationUrl: http://petstore.swagger.io/oauth/dialog
+    authorizationUrl: http://petstore.io/oauth/dialog
     flow: implicit
     scopes:
       write:pets: modify pets in your account
@@ -654,11 +649,8 @@ definitions:
         type: string
       message:
         type: string
-externalDocs:
-  description: Find out more about Swagger
-  url: http://swagger.io
 # Added by API Auto Mocking Plugin
-host: virtserver.swaggerhub.com
+host: virtserver.petstore.com
 basePath: /project-gamma/Petstore/1.0.0
 schemes:
  - https
